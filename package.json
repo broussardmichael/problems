@@ -1,0 +1,23 @@
+{
+  "name": "problems",
+  "version": "1.0.0",
+  "description": "list of problems to work on",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/broussardmichael/problems.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/broussardmichael/problems/issues"
+  },
+  "homepage": "https://github.com/broussardmichael/problems#readme",
+  "dependencies": {
+    "circularlinkedlist": "file:../circularLinkedList",
+    "linkedlist": "file:../linkedList"
+  }
+}
