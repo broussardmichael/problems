@@ -18,6 +18,7 @@
   "homepage": "https://github.com/broussardmichael/problems#readme",
   "dependencies": {
     "circularlinkedlist": "file:../circularLinkedList",
+    "hashtable": "file:../hashtable",
     "linkedlist": "file:../linkedList"
   }
 }
