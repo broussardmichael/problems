@@ -5,8 +5,8 @@ module.exports = (function () {
 
     hashTableProblem.run = function (listOfNumbersToCompare, low, high) {
         let listOfNumbersNotIncluded = [];
-        
-        let constructedTable = hashTable.createHashTable(listOfNumbersToCompare.length);
+        table = Object.create(hashTable);
+        let constructedTable = table.createHashTable(listOfNumbersToCompare.length);
         constructedTable.populateHashTableWithArrayOfKeys(listOfNumbersToCompare);
         
         for(let i = low; i <= high; i++) {

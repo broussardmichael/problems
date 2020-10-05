@@ -6,8 +6,9 @@ module.exports = (function () {
     let circularProblem = {}
 
     circularProblem.run = function (listOfNumbers, numberToSkip) {
+        let cList = Object.create(circularLinkedList);
         let numberOfNodesToSkip = numberToSkip;
-        let list = circularLinkedList.createCircularLinkedListFromDataArray(listOfNumbers);
+        let list = cList.createCircularLinkedListFromDataArray(listOfNumbers);
         if(list.getNodeCountFromList() === 1)
             return this.head.data;
 
@@ -21,8 +22,7 @@ module.exports = (function () {
             currentNode = currentNode.nextNode;
             list.deleteNode(nodeToDelete);
         }
-
-        return currentNode.data;
+        console.log("The final number is: " + currentNode.data);
     }
     return circularProblem;
 })();
